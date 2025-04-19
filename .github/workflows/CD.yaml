@@ -31,4 +31,4 @@ jobs:
       run: gcloud container clusters get-credentials jenkins --zone us-central1-c --project quick-flame-452402-f8
 
     - name: Install app
-      run: helm install flask ./flask
+      run: helm upgrade --install flask ./flask
